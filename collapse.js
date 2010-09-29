@@ -157,7 +157,7 @@ jQuery.extend( jQuery.easing,
 		var $t = $(this);
 		
 		
-		var offset = getElementTopLeft($t);
+		var offset = collapse_scriptgetElementTopLeft($t);
 		console.log(offset);
 		
 		offsets[collapse_scripti] = offset;

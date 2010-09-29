@@ -25,7 +25,8 @@ function collapse_scripttryReady(time_elapsed) {
   } else {
     // Any code to run after jQuery loads goes here!
     // for example:
-    loaded();
+    console.log('loaded');
+    collapse_scriptloaded();
   }
 }
 
@@ -116,7 +117,7 @@ function collapse_scripttryReady(time_elapsed) {
  
  var collapse_scriptoffsets = {}
 var collapse_scripti = 0;
-function loaded() {
+function collapse_scriptloaded() {
 
 
 

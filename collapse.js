@@ -244,8 +244,7 @@ e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["
  
  
  
- var collapse_scriptoffsets = {}
-var collapse_scripti = 0;
+
 function collapse_scriptloaded() {
 
 
@@ -279,7 +278,8 @@ jQuery.extend( jQuery.easing,
 
 
 
-
+	var collapse_scriptoffsets = {}
+	var collapse_scripti = 0;
 
 	var $collapse_scriptels = $('body').find('*');
 
@@ -291,7 +291,7 @@ jQuery.extend( jQuery.easing,
 		console.log(offset);
 		
 		collapse_scriptoffsets[collapse_scripti] = offset;
-		collapse_scripti++
+		collapse_scripti++;
 		
 		if (collapse_scripti==$els.size()) {
 	

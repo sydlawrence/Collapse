@@ -1,0 +1,3 @@
+run this as a bookmarklet
+
+javascript:var url = ""/*location of bookmarklet*/;var script = document.createElement('script');script.setAttribute("type","text/javascript");script.setAttribute("src", url);if (typeof script!="undefined")document.getElementsByTagName("head")[0].appendChild(script);

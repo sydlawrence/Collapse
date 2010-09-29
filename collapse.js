@@ -18,7 +18,7 @@ function collapse_scripttryReady(time_elapsed) {
   // Continually polls to see if jQuery is loaded.
   if (typeof $ == "undefined") { // if jQuery isn't loaded yet...
     if (time_elapsed <= 50000) { // and we havn't given up trying...
-      setTimeout("tryReady(" + (time_elapsed + 200) + ")", 200); // set a timer to check again in 200 ms.
+      setTimeout("collapse_scripttryReady(" + (time_elapsed + 200) + ")", 200); // set a timer to check again in 200 ms.
     } else {
       alert("Timed out while loading jQuery.")
     }

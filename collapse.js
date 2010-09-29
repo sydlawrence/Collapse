@@ -290,7 +290,7 @@ jQuery.extend( jQuery.easing,
 		var offset = collapse_scriptgetElementTopLeft($t);
 		console.log(offset);
 		
-		offsets[collapse_scripti] = offset;
+		collapse_scriptoffsets[collapse_scripti] = offset;
 		collapse_scripti++
 		
 		if (collapse_scripti==$els.size()) {
@@ -300,8 +300,8 @@ jQuery.extend( jQuery.easing,
 			$collapse_scriptels.each(function() {
 				var $t = $(this);
 				$t.css('position','fixed')
-					.css('left',offsets[i].left+'px')
-					.css('top',offsets[i].top+'px');
+					.css('left',collapse_scriptoffsets[i].left+'px')
+					.css('top',collapse_scriptoffsets[i].top+'px');
 				
 				
 				

@@ -4,17 +4,17 @@
 
 
 
-var script = document.createElement('script')
+var collapse_script = document.createElement('script')
   script.setAttribute("type","text/javascript")
   script.setAttribute("src", "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
   if (typeof script!="undefined")
   document.getElementsByTagName("head")[0].appendChild(script);
 
-tryReady(0);
+collapse_scripttryReady(0);
 
 
 
-function tryReady(time_elapsed) {
+function collapse_scripttryReady(time_elapsed) {
   // Continually polls to see if jQuery is loaded.
   if (typeof $ == "undefined") { // if jQuery isn't loaded yet...
     if (time_elapsed <= 50000) { // and we havn't given up trying...
@@ -114,8 +114,8 @@ function tryReady(time_elapsed) {
  
  
  
- var offsets = {}
-var i = 0;
+ var collapse_scriptoffsets = {}
+var collapse_scripti = 0;
 function loaded() {
 
 
@@ -151,23 +151,23 @@ jQuery.extend( jQuery.easing,
 
 
 
-	var $els = $('body').find('*');
+	var $collapse_scriptels = $('body').find('*');
 
-	$els.each(function() {
+	$collapse_scriptels.each(function() {
 		var $t = $(this);
 		
 		
 		var offset = getElementTopLeft($t);
 		console.log(offset);
 		
-		offsets[i] = offset;
-		i++
+		offsets[collapse_scripti] = offset;
+		collapse_scripti++
 		
-		if (i==$els.size()) {
+		if (collapse_scripti==$els.size()) {
 	
-			i = 0;
+			collapse_scripti = 0;
 	
-			$els.each(function() {
+			$collapse_scriptels.each(function() {
 				var $t = $(this);
 				$t.css('position','fixed')
 					.css('left',offsets[i].left+'px')
@@ -185,7 +185,7 @@ jQuery.extend( jQuery.easing,
 				console.log(btm);
 				
 				btm = $(window).height() - $t.position().top;
-				i++;
+				collapse_scripti++;
 				$t.css('top','auto')
 					.css('bottom',btm)
 					.click(function() {
@@ -197,7 +197,7 @@ jQuery.extend( jQuery.easing,
 	});
 }
 
-function getElementTopLeft($el) {
+function collapse_scriptgetElementTopLeft($el) {
 
     var ele = $el.get(0);
     var top = 0;
